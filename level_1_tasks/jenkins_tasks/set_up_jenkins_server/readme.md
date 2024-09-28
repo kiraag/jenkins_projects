@@ -22,11 +22,93 @@ The DevOps team at **xFusionCorp Industries** is setting up CI/CD pipelines usin
 
 ---
 
-## Steps to Execute
+## Steps to execute
 
-### 1. SSH into the Jenkins Server
-SSH into the Jenkins server from the jump host using the following credentials:
+
+# Jenkins Installation and Setup Guide
+
+## 1. Access the Jenkins Server
+
+SSH into the Jenkins server from the jump host using the root user:
 
 ```bash
 ssh root@<Jenkins-Server-IP>
+```
 
+Use the provided password: `S3curePass`.
+
+---
+
+## 2. Install Jenkins using Yum
+
+### a. Install the necessary dependencies for Jenkins:
+
+```bash
+yum install java-11-openjdk-devel -y
+```
+
+### b. Add the Jenkins repository:
+
+```bash
+wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+```
+
+### c. Install Jenkins:
+
+```bash
+yum install jenkins -y
+```
+
+---
+
+## 3. Start Jenkins Service
+
+### a. Start Jenkins:
+
+```bash
+systemctl start jenkins
+```
+
+### b. Enable Jenkins to start on boot:
+
+```bash
+systemctl enable jenkins
+```
+
+> **Note**: If you face timeout issues while starting Jenkins, refer to the following link for help on common solutions: [Jenkins Timeout Issues](http://jenkins.io).
+
+---
+
+## 4. Set Up Jenkins Admin User
+
+- Access the Jenkins UI by opening a web browser and navigating to:
+
+  ```
+  http://<Jenkins-Server-IP>:8080
+  ```
+
+- On the setup screen, you'll be asked to enter the initial admin password. Retrieve it using the following command:
+
+  ```bash
+  cat /var/lib/jenkins/secrets/initialAdminPassword
+  ```
+
+- Follow the on-screen instructions to create an admin user with the following details:
+
+    - **Username**: `theadmin`
+    - **Password**: `Adm!n321`
+    - **Full Name**: `Mariyam`
+    - **Email**: `mariyam@jenkins.stratos.xfusioncorp.com`
+
+---
+
+## 5. Final Steps
+
+- Complete the installation by selecting default plugins or choosing specific plugins as per your needs.
+- After setup, click on the **Jenkins** button on the top bar to confirm that Jenkins is up and running successfully.
+
+---
+
+This should complete the Jenkins installation and setup.
+```

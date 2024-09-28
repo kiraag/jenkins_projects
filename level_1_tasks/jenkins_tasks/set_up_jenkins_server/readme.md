@@ -11,10 +11,10 @@ The DevOps team at **xFusionCorp Industries** is setting up CI/CD pipelines usin
    - Note: If you face a timeout issue while starting the Jenkins service, refer to the following [link](https://support.cloudbees.com/hc/en-us/articles/217078498-Troubleshooting-Jenkins-slowness-or-hanging-due-to-network-issues) for help.
 
 3. **Create Jenkins admin user** with the following details:
-   - Username: `theadmin`
-   - Password: `Adm!n321`
-   - Full Name: `Mariyam`
-   - Email: `mariyam@jenkins.stratos.xfusioncorp.com`
+   - Username: `<username>`
+   - Password: `<password>`
+   - Full Name: `<fullname>`
+   - Email: `<mail_id>`
 
 ### Notes:
 1. Access the Jenkins server by **SSH** using the root user and the provided password `S3curePass` from the **jump host**.
@@ -35,7 +35,7 @@ SSH into the Jenkins server from the jump host using the root user:
 ssh root@<Jenkins-Server-IP>
 ```
 
-Use the provided password: `S3curePass`.
+Use the provided password: `<provided_password>`.
 
 ---
 

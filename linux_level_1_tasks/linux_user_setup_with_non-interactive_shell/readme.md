@@ -10,3 +10,23 @@ To accommodate the backup agent tool's specifications, the system admin team at 
 Use the following command to access **App Server 2**:
 ```bash
 ssh user@app-server-2
+
+## 2. Create the user john with a non-interactive shell
+
+To create the user john and assign them a non-interactive shell (in this case, `/usr/sbin/nologin`), run:
+
+```bash
+sudo useradd -s /usr/sbin/nologin john
+
+## 3. Verify the user creation
+To ensure the user john was created successfully and assigned the non-interactive shell, check the /etc/passwd file:
+
+```bash
+grep john /etc/passwd
+
+The output should look similar to this:
+
+```bash
+john:x:1001:1001::/home/john:/usr/sbin/nologin
+
+This confirms that the user john has been successfully created with a non-interactive shell on App Server 2.

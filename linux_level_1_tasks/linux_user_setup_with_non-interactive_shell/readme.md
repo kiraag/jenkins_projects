@@ -11,14 +11,14 @@ Use the following command to access **App Server 2**:
 ```bash
 ssh user@app-server-2
 
-## 2. Create the user john with a non-interactive shell
+### 2. Create the user john with a non-interactive shell
 
 To create the user john and assign them a non-interactive shell (in this case, `/usr/sbin/nologin`), run:
 
 ```bash
 sudo useradd -s /usr/sbin/nologin john
 
-## 3. Verify the user creation
+### 3. Verify the user creation
 To ensure the user john was created successfully and assigned the non-interactive shell, check the /etc/passwd file:
 
 ```bash

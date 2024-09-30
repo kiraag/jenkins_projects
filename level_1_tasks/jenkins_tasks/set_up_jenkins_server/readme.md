@@ -96,10 +96,10 @@ systemctl enable jenkins
 
 - Follow the on-screen instructions to create an admin user with the following details:
 
-    - **Username**: `theadmin`
-    - **Password**: `Adm!n321`
-    - **Full Name**: `Mariyam`
-    - **Email**: `mariyam@jenkins.stratos.xfusioncorp.com`
+    - **Username**: `<given_username>`
+    - **Password**: `<given_password>`
+    - **Full Name**: `<given_full_name>`
+    - **Email**: `<given_maid_id>`
 
 ---
 

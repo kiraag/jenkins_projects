@@ -9,7 +9,7 @@ To accommodate the backup agent tool's specifications, the system admin team at 
 ### 1. Log in to App Server 2 via SSH:
 Use the following command to access **App Server 2**:
 
-ssh user@app-server-2
+`ssh user@app-server-2`
 
 ### 2. Create the user john with a non-interactive shell
 

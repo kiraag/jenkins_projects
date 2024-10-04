@@ -2,9 +2,10 @@
 In response to the latest tool implementation at xFusionCorp Industries, the system admins require the creation of a service user account. Here are the specifics:
 
 Create a user named `john` in App Server 3 without a home directory.
+
 ---
 
-# To create a user named `john` without a home directory on App Server 3, follow these steps:
+## To create a user named `john` without a home directory on App Server 3, follow these steps:
 
 ## 1. Login to App Server 3:
 First, you'll need to log in to the App Server 3 using SSH or directly accessing the server.

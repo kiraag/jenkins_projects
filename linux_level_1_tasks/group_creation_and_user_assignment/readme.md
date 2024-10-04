@@ -1,4 +1,4 @@
-# To create the nautilus_admin_users group and add the user kano across all App servers
+# To create the `nautilus_admin_users` group and add the user `kano` across all App servers
 
 To create the `nautilus_admin_users` group and add the user `kano` across all App servers in the Stratos Datacenter, you can follow these steps. The specific commands may vary depending on your operating system, but here’s a general approach for a Unix/Linux environment.
 

@@ -33,6 +33,7 @@ Replace `your_user` with your non-root username and `app_server_ip` with the IP 
 `sudo systemctl restart sshd`
         
         or
+
 `sudo service sshd restart`
 
 ### Step 4: Verify the Configuration

@@ -37,7 +37,7 @@ The Nautilus DevOps team has recently setup a Jenkins server, which they want to
     - If a restart is required, select Restart Jenkins when installation is complete and no jobs are running.
     - Wait for Jenkins to restart and complete the plugin installation.
 
-**OPTIONAL**
+        **OPTIONAL**
 
         - If the plugins were failing to install, then check for updates of the previous dependencies and update all of them.
         - Now restart the jenkins and install the plugins.

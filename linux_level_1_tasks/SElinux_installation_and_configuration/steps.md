@@ -12,7 +12,7 @@ Disregard the current status of SELinux via the command line; the final status a
 
 ## To install the required `SELinux packages` and p`ermanently disable SELinux on App server 1` in the Stratos Datacenter, follow these steps:
 
-## 1. Access App server 1:
+### 1. Access App server 1:
 
 Log in via SSH.
 
@@ -20,7 +20,7 @@ Log in via SSH.
 ssh username@server-ip
 ```
 
-## 2. Install `SELinux packages`: 
+### 2. Install `SELinux packages`: 
 
 Use the `package manager` to install `SELinux-related packages`. For example, on a CentOS/RHEL system, you can use:
 

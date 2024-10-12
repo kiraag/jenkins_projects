@@ -7,6 +7,7 @@ Permanently `disable SELinux` for the time being; it will be re-enabled after ne
 No need to `reboot` the server, as a scheduled maintenance reboot is already planned for tonight.
 
 Disregard the current status of SELinux via the command line; the final status after the reboot should be disabled.
+
 ---
 
 ## To install the required `SELinux packages` and p`ermanently disable SELinux on App server 1` in the Stratos Datacenter, follow these steps:
